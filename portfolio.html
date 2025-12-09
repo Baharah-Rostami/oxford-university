@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/portfolio.css">
+  <link rel="shortcut icon" href="./images/oxford-university-logo-png.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- ====navbar==== -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+    <div class="container">
+      <a href="#" class="navbar-brand pt-3 logo">
+        <p>My portfolio</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"> <span
+          class="navbar-toggler-icon"> </span> </button>
+      <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+          <li class="nav-item"><a href="index.html" class="nav-link ">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="student.html" class="nav-link">Student life</a></li>
+
+          <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" id="BlogDropdown" role="button"
+              data-bs-toggle="dropdown">Blog</a>
+            <ul class="dropdown-menu" aria-labelledby="BlogDropdown">
+              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+              <hr>
+              <li><a class="dropdown-item" href="singleBlog.html">Single Blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="location.html" class="nav-link">Location & Hours</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="subject.html" id="subjectDropdown" role="button"
+              data-bs-toggle="dropdown">
+              Subjects
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="subjectDropdown">
+              <li><a class="dropdown-item" href="subject.html">PPE</a></li>
+              <li><a class="dropdown-item" href="subject.html">LAW</a></li>
+              <li><a class="dropdown-item" href="subject.html">Medicine</a></li>
+              <li><a class="dropdown-item" href="subject.html">Computer Science</a></li>
+              <li><a class="dropdown-item" href="subject.html">English Literature</a></li>
+              <li><a class="dropdown-item" href="subject.html">Philosophy</a></li>
+              <li><a class="dropdown-item" href="subject.html">Engineering</a></li>
+              <li><a class="dropdown-item" href="subject.html">Psychology</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="porfolioDropdown" role="button"
+              data-bs-toggle="dropdown">Portfolio</a>
+            <ul class="dropdown-menu" aria-labelledby="porfolioDropdown">
+              <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+              <li><a class="dropdown-item" href="single-portfolio.html">Single Portfolio</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a href="contact.html" target="_blank" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ====HEADER-HOME==== -->
+  <section class="home">
+    <section class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Baharah Rostami</h1>
+      <h3>And I'm a <span id="typing"></span></h3>
+
+      <p>Explore my collection of written works, showcasing creativity, clarity and a passion for storytelling.</p>
+
+      <div class="social-media">
+        <a href="mailto:rostamibahara0@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://twitter.com/BaharahRostami" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/bahar-rustami-87b21a28a" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Baharah-Rostami" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+
+      <a href="single-portfolio.html" class="btn fw-bold">See More</a>
+    </section>
+
+    <div class="home-img">
+      <img src="./images/bahar.jpg" alt="myPic">
+    </div>
+  </section>
+  <!-- ====MAIN==== -->
+  <section class="skills container my-5">
+    <h2 class="text-center mb-5 fw-bold">My Skills</h2>
+
+    <div class="row g-4 justify-content-center">
+      <!-- HTML -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="skill-card">
+          <div class="skill-inner">
+            <div class="skill-front d-flex flex-column justify-content-center align-items-center">
+              <i class="fab fa-html5 fa-3x mb-3"></i>
+              <h3>HTML</h3>
+            </div>
+            <div class="skill-back d-flex flex-column justify-content-center align-items-center">
+              <p>Semantic HTML, accessibility, SEO-friendly structure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="skill-card">
+          <div class="skill-inner">
+            <div class="skill-front d-flex flex-column justify-content-center align-items-center">
+              <i class="fab fa-css3-alt fa-3x mb-3"></i>
+              <h3>CSS</h3>
+            </div>
+            <div class="skill-back d-flex flex-column justify-content-center align-items-center">
+              <p>Flexbox, Grid, animations, responsive modern design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="skill-card">
+          <div class="skill-inner">
+            <div class="skill-front d-flex flex-column justify-content-center align-items-center">
+              <i class="fab fa-js fa-3x mb-3"></i>
+              <h3>JavaScript</h3>
+            </div>
+            <div class="skill-back d-flex flex-column justify-content-center align-items-center">
+              <p>DOM, ES6+, APIs, events, dynamic UI interactions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="skill-card">
+          <div class="skill-inner">
+            <div class="skill-front d-flex flex-column justify-content-center align-items-center">
+              <i class="fab fa-bootstrap fa-3x mb-3"></i>
+              <h3>Bootstrap</h3>
+            </div>
+            <div class="skill-back d-flex flex-column justify-content-center align-items-center">
+              <p>Responsive grids, components, utilities, and customization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tailwind -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="skill-card">
+          <div class="skill-inner">
+            <div class="skill-front d-flex flex-column justify-content-center align-items-center">
+              <i class="fa-brands fa-tailwind fa-3x mb-3"></i>
+              <h3>Tailwind</h3>
+            </div>
+            <div class="skill-back d-flex flex-column justify-content-center align-items-center">
+              <p>Utility-first workflow, custom configs & rapid prototyping.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====FOOTER==== -->
+  <footer class="mt-5 footer-section">
+    <div class="container-fluid text-light py-5">
+      <div class="title d-flex align-items-center mb-4">
+        <a href="#" class="footer-title text-center">My Portfolio</a>
+      </div>
+
+      <div class="row mt-4">
+        <!-- About Us -->
+        <div class="col-12 col-lg-4 col-md-6 mb-4 ps-5">
+          <h3 class="footer-heading">Explore More</h3>
+          <ul class="footer-list">
+            <li><a href="index.html" class="nav-link p-0">Home</a></li>
+            <li><a href="about.html" class="nav-link p-0">About</a></li>
+            <li><a href="student.html" class="nav-link p-0">Student Life</a></li>
+            <li><a href="blog.html" class="nav-link p-0">Blog</a></li>
+            <li><a href="singleBlog.html" class="nav-link p-0">Single Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-12 col-lg-4 col-md-6 mb-4">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="location.html" class="nav-link p-0">Location & Hours</a></li>
+            <li><a href="subject.html" class="nav-link p-0">Subjects</a></li>
+            <li><a href="portfolio.html" class="nav-link p-0">Portfolio</a></li>
+            <li><a href="single-portfolio.html" class="nav-link p-0">Single Portfolio</a></li>
+            <li><a href="contact.html" target="_blank" class="nav-link p-0">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-12 col-lg-4 col-md-6 mb-4">
+          <h3 class="footer-heading">Connect With Us</h3>
+          <div class="social-links d-flex gap-3 mt-3">
+            <a href="https://www.linkedin.com/in/bahar-rustami-87b21a28a" target="_blank" class="fs-5 text-light"><i
+                class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/BaharahRostami" target="_blank" class="fs-5 text-light"><i
+                class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://github.com/Baharah-Rostami" target="_blank" class="fs-5 text-light"><i
+                class="fa-brands fa-github"></i></a>
+            <a href="https://mailto:rostamibahara0@gmail.com" target="_blank" class="fs-5 text-light"><i
+                class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class=" text-light text-center pb-5">&copy;2025 Designed by Baharah Rostami |All right reserved.</div>
+  </footer>
+
+
+  <script>
+    let text = "Frontend Developer";
+    let index = 0;
+    let isDeleting = false;
+    let speed = 120;
+    let pause = 1000;
+
+    function typeEffect() {
+      const typing = document.getElementById("typing");
+
+      if (!isDeleting) {
+        typing.textContent = text.substring(0, index + 1);
+        index++;
+      } else {
+        typing.textContent = text.substring(0, index - 1);
+        index--;
+      }
+
+      if (index === text.length) {
+        setTimeout(() => isDeleting = true, pause);
+      }
+
+      if (index === 0 && isDeleting) {
+        isDeleting = false;
+      }
+
+      setTimeout(typeEffect, speed);
+    }
+
+    typeEffect();
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

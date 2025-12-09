@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --secondary-color: #1a1a1b;
+    --shadow:0 2px 40px 8px rgba(15, 15, 15, .15);
+    --transition: transform 0.3s ease, box-shadow 0.3s ease;;
+    --font-family: Arial;
+}
+/* ****NAVBAR**** */
+
+.logo-img{
+    width: 50px;
+} 
+.logo{
+    line-height: 6px;
+}
+.logo p{
+    font-family:serif ;
+}
+/* ****HEADER**** */
+.oxford-hero .hero-img {
+  height: 350px;
+  object-fit: cover;
+}
+.oxford-hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+}
+
+/* ****ABOUT**** */
+.about-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+/* IMAGE */
+.about-main .about-img img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  max-width: 550px;
+  transition: transform .6s cubic-bezier(0.23, 1, 0.32, 1),
+              box-shadow .6s cubic-bezier(0.23, 1, 0.32, 1),
+              filter .4s ease;
+}
+
+.about-main .about-img img:hover {
+  transform: scale(1.06) translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.05);
+}
+
+/* TEXT CARD */
+.about-main .about-data {
+  width: 70%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-top: -20px;
+  transition: transform .6s cubic-bezier(0.23, 1, 0.32, 1),
+              box-shadow .6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.about-main .about-data:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 30px 55px rgba(0, 0, 0, 0.18);
+}
+
+/* TYPOGRAPHY CLEANUP */
+.about-main h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.about-main p {
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* ***** RESPONSIVE ***** */
+@media (min-width: 992px) {
+  .about-main {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .about-main .about-img img {
+    max-width: 500px;
+    height: 330px;
+  }
+
+  .about-main .about-data {
+    width: 45%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-main .about-data {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .about-main h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-main p {
+    font-size: 0.95rem;
+  }
+}
+/* *****HISTORY***** */
+.history{
+  width: 100%;
+  /* height: 500px; */
+  min-height: 500px;
+  background: url('../images/old-oxford.jpg') center no-repeat;
+  background-size: cover;
+}
+.history .hover-card {
+  transition: transform .5s ease, box-shadow .5s ease;
+}
+
+.history .hover-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1.5rem 2.5rem rgba(0,0,0,0.15);
+}
+
+.gallery-img {
+  height: 420px;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.century-badge {
+  background: rgba(0,0,0,0.55);
+  padding: 0.7rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  backdrop-filter: blur(3px);
+}
+
+/* *****FOOTER***** */
+.footer-section {
+  background-color: var(--secondary-color);
+}
+
+footer .footer-logo {
+  width: 70px;
+}
+
+footer .footer-title {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+footer .footer-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+footer .footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-list li {
+  margin-bottom: 8px;
+}
+
+footer .footer-list a {
+  color: #dcdcdc;
+}
+
+footer .footer-list a:hover {
+  color: #ffc107;
+}
+
+footer .social-links a {
+  transition: 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #ffc107;
+  transform: translateY(-3px);
+}

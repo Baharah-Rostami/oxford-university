@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Oxford Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="shortcut icon" href="./images/oxford-university-logo-png.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+     <!-- ====navbar==== -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+    <div class="container">
+      <img src="./images/oxford-university-logo-png.png" alt="oxford-logo" class="logo-img">
+
+      <a href="#" class="navbar-brand pt-3 logo">
+        <p>UNIVERSITY</p>
+        <p>OF <span class="text-warning">OX</span>FORD</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"> <span
+          class="navbar-toggler-icon"> </span> </button>
+      <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+          <li class="nav-item"><a href="index.html" class="nav-link ">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="student.html" class="nav-link">Student life</a></li>
+
+           <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle active" id="BlogDropdown" role="button" data-bs-toggle="dropdown">Blog</a>
+             <ul class="dropdown-menu" aria-labelledby="BlogDropdown">
+            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+            <hr>
+            <li><a class="dropdown-item" href="singleBlog.html">Single Blog</a></li>
+          </ul>
+        </li>
+          <li class="nav-item"><a href="location.html" class="nav-link">Location & Hours</a></li>
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="subject.html" id="subjectDropdown" role="button" data-bs-toggle="dropdown">
+              Subjects
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="subjectDropdown">
+              <li><a class="dropdown-item" href="subject.html">PPE</a></li>
+              <li><a class="dropdown-item" href="subject.html">LAW</a></li>
+              <li><a class="dropdown-item" href="subject.html">Medicine</a></li>
+              <li><a class="dropdown-item" href="subject.html">Computer Science</a></li>
+              <li><a class="dropdown-item" href="subject.html">English Literature</a></li>
+              <li><a class="dropdown-item" href="subject.html">Philosophy</a></li>
+              <li><a class="dropdown-item" href="subject.html">Engineering</a></li>
+              <li><a class="dropdown-item" href="subject.html">Psychology</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="porfolioDropdown" role="button"
+              data-bs-toggle="dropdown">Portfolio</a>
+            <ul class="dropdown-menu" aria-labelledby="porfolioDropdown">
+              <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+              <li><a class="dropdown-item" href="single-portfolio.html">Single Portfolio</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a href="contact.html" target="_blank" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ <!-- ====HEADER==== -->
+  <header class="oxford-hero position-relative">
+    <img src="./images/oxford-cultural-event.jpg" class="w-100 hero-img" alt="Oxford University">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content text-center text-white position-absolute top-50 start-50 translate-middle">
+      <h1 class="fw-bold display-5"> <span class="text-warning">OX</span>ford Blog</h1>
+      <p class="mt-3">Exploring the Heart of Oxford’s Academic Tradition.</p>
+      <a href="singleBlog.html" target="_blank" class="btn btn-warning">See More</a>
+    </div>
+  </header>
+   <!-- ====MAIN==== -->
+   <main>
+    <!-- ===youtube video==== -->
+    <section class="container my-5">
+  <h2 class="mb-4 text-center fw-bold">
+    Discover <span class="text-warning">Oxford</span> University
+  </h2>
+
+  <div class="ratio ratio-16x9 shadow-lg rounded overflow-hidden">
+    <iframe 
+      src="https://www.youtube.com/embed/Y3p9FWV0mao" 
+      title="Oxford University Video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <p class="mt-3 text-center text-muted fs-5">
+    A closer look at the historic beauty and academic excellence of Oxford.
+  </p>
+</section>
+
+
+<section class="container my-5 newspaper-section">
+  <div class="row g-4">
+
+    <!-- ===Main Article=== -->
+    <div class="col-lg-8 fade-up">
+      <div class="newspaper-card p-4">
+        <img src="./images/oxford-old.jpg"
+             class="img-fluid rounded mb-3 shadow-sm" alt="Oxford University">
+
+        <h2 class="fw-bold newspaper-title">Inside the Historic Heart of Oxford University</h2>
+        <p class="text-muted small">Published: December 2025 • Oxford Gazette</p>
+
+        <p class="lead">
+          Oxford University, one of the world's most prestigious institutions, continues to uphold centuries 
+          of academic tradition while embracing modern innovation. Its iconic colleges, libraries, and courtyards 
+          attract scholars from all around the world.
+        </p>
+
+        <button class="btn btn-dark px-4 mt-2">Read More</button>
+      </div>
+    </div>
+
+    <div class="col-lg-4 fade-up">
+      <div class="newspaper-card border border-dark p-4 mb-4" data-aos="zoom-in-down" data-aos-delay="50" data-aos-duration="1000">
+        <h4 class="fw-bold newspaper-title">Oxford’s Academic Excellence</h4>
+        <p class="mb-2">
+          With over 38 colleges and multiple world-leading departments, Oxford remains a symbol of elite education.
+        </p>
+        <a href="singleBlog.html" target="_blank" class="btn btn-outline-dark btn-sm">Read</a>
+      </div>
+
+      <div class="newspaper-card border border-dark p-4" data-aos="zoom-in-down" data-aos-delay="50" data-aos-duration="1000">
+        <h4 class="fw-bold newspaper-title">Student Life & Traditions</h4>
+        <p class="mb-2">
+          From rowing on the Thames to historic college dinners, student life blends tradition with vibrant culture.
+        </p>
+          <a href="singleBlog.html" target="_blank" class="btn btn-outline-dark btn-sm">Explore</a>
+      </div>
+    </div>
+  </div>
+</section>
+   </main>
+
+   
+<!-- ====FOOTER==== -->
+<footer class="mt-5 footer-section">
+  <div class="container-fluid text-light py-5">
+    <div class="title d-flex align-items-center mb-4">
+      <img src="./images/oxford-university-logo-png.png" alt="logo-img" class="me-3 footer-logo">
+      <a href="#" class="footer-title">University of <span class="text-warning">OX</span>ford</a>
+    </div>
+
+    <div class="row mt-4">
+
+      <!-- About Paragraph -->
+      <div class="col-12 col-lg-3 col-md-6 mb-4">
+        <h3 class="footer-heading">Our Mission</h3>
+        <p class="text-light-50">
+          We strive to create an environment of academic excellence, innovative research, 
+          and world-class learning opportunities for students from around the globe.
+        </p>
+      </div>
+
+      <!-- About Us -->
+      <div class="col-12 col-lg-3 col-md-6 mb-4">
+        <h3 class="footer-heading">Explore Oxford</h3>
+        <ul class="footer-list">
+          <li><a href="index.html" class="nav-link p-0">Home</a></li>
+          <li><a href="about.html" class="nav-link p-0">About</a></li>
+          <li><a href="student.html" class="nav-link p-0">Student Life</a></li>
+          <li><a href="blog.html" class="nav-link p-0">Blog</a></li>
+          <li><a href="singleBlog.html" class="nav-link p-0">Single Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-12 col-lg-3 col-md-6 mb-4">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-list">
+          <li><a href="location.html" class="nav-link p-0">Location & Hours</a></li>
+          <li><a href="subject.html" class="nav-link p-0">Subjects</a></li>
+          <li><a href="portfolio.html" class="nav-link p-0">Portfolio</a></li>
+          <li><a href="single-portfolio.html" class="nav-link p-0">Single Portfolio</a></li>
+          <li><a href="contact.html" target="_blank" class="nav-link p-0">Contact</a></li>
+        </ul>
+      </div>
+
+       <!-- Social Media -->
+      <div class="col-12 col-lg-3 col-md-6 mb-4">
+        <h3 class="footer-heading">Connect With Us</h3>
+        <div class="social-links d-flex gap-3 mt-3">
+          <a href="https://www.linkedin.com/in/bahar-rustami-87b21a28a" target="_blank" class="fs-5 text-light"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/BaharahRostami" target="_blank" class="fs-5 text-light"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://github.com/Baharah-Rostami" target="_blank" class="fs-5 text-light"><i class="fa-brands fa-github"></i></a>
+          <a href="https://mailto:rostamibahara0@gmail.com" target="_blank" class="fs-5 text-light"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class=" text-light text-center pb-5">&copy;2025 Designed by Baharah Rostami |All right reserved.</div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  });
+</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

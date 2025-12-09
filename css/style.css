@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #202083;
+    --secondary-color: #1a1a1b;
+    --shadow:0 2px 40px 8px rgba(15, 15, 15, .15);
+    --transition: transform 0.3s ease, box-shadow 0.3s ease;
+    --font-family: Arial;
+}
+/* ****NAVBAR**** */
+
+.logo-img{
+    width: 50px;
+} 
+.logo{
+    line-height: 6px;
+}
+.logo p{
+    font-family:serif ;
+}
+/* ****HEADER**** */
+
+header{
+    width: 100%;
+    height: 530px;
+    background: url(../images/oxford-background.jpg) center no-repeat;
+    background-size: cover;
+}
+.header-card{
+    width: 40%;
+    height: 530px;
+    background-color: rgba(248, 244, 244, 0.753);
+    margin-left: 5%;
+}
+@media screen and (max-width:560px){
+    .header-card{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* ****ABOUT**** */
+
+.about-title p{
+    font-family: sans-serif;
+}
+.about-img img{
+    width: 500px;
+}
+.about-info{
+    margin-left: -40px;
+    height: 350px;
+}
+@media screen and (max-width:560px){
+    .about-main{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-img{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: -30px;
+    }
+    .about-img img{
+        width: 100%;
+    }
+    .about-info{
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+/* ***** stats-section ***** */
+
+.stats-section {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.stats-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-6px);
+  border-color: #ffc107;
+}
+
+.stats-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.stats-title {
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+
+/* ***CARD-DATA**** */
+.cards .title h2{
+    font-family: var(--font-family);
+
+}
+.cards .card{
+    transition: var(--transition);
+}
+.cards .card:hover{
+    transform: translateY(-10px);
+    background-color: black;
+    color: white;
+}
+
+/* **** FOOTER **** */
+.footer-section {
+  background-color: var(--secondary-color);
+}
+
+footer .footer-logo {
+  width: 70px;
+}
+
+footer .footer-title {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+footer .footer-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+footer .footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-list li {
+  margin-bottom: 8px;
+}
+
+footer .footer-list a {
+  color: #dcdcdc;
+}
+
+footer .footer-list a:hover {
+  color: #ffc107;
+}
+
+footer .social-links a {
+  transition: 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #ffc107;
+  transform: translateY(-3px);
+}

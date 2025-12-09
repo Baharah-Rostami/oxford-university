@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --secondary-color: #1a1a1b;
+    --font-family: Arial;
+}
+/* ****NAVBAR**** */
+
+.logo-img{
+    width: 50px;
+} 
+.logo{
+    line-height: 6px;
+}
+.logo p{
+    font-family:serif ;
+}
+/* ****HEADER**** */
+.oxford-hero .hero-img {
+  height: 350px;
+  object-fit: cover;
+}
+.oxford-hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+}
+.wrapper {
+  perspective: 1000px;
+}
+
+/* ****MAIN**** */
+.flip-card {
+  width: 100%;
+  height: 230px;
+  cursor: pointer;
+}
+
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform .8s ease;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+/* FRONT SIDE */
+.front {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.front-title {
+  width: 100%;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.55);
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* BACK SIDE */
+.back {
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.back h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* ****professors**** */
+.professors-overview {
+  background-color: #f8f9fa; 
+}
+.professors-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.professors-img-wrapper img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+.professors-overview p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* *****FOOTER***** */
+.footer-section {
+  background-color: var(--secondary-color);
+}
+
+footer .footer-logo {
+  width: 70px;
+}
+
+footer .footer-title {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+footer .footer-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+footer .footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-list li {
+  margin-bottom: 8px;
+}
+
+footer .footer-list a {
+  color: #dcdcdc;
+}
+
+footer .footer-list a:hover {
+  color: #ffc107;
+}
+
+footer .social-links a {
+  transition: 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #ffc107;
+  transform: translateY(-3px);
+}
